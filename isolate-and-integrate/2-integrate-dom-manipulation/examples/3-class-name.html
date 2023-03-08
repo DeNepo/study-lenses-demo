@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>example: class name</title>
+    <style>
+      .loud {
+        font-weight: bolder;
+        color: red;
+      }
+      .soft {
+        font-style: italic;
+        color: aquamarine;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root">
+      <h1 id="title">big words</h1>
+      <p id="many-words">many smaller words</p>
+    </div>
+
+    <script>
+      "use strict";
+
+      /* element.className
+
+        .className allows you to change the class of an element
+        this is useful for dynamic styling
+
+      */
+      const titleEl = document.getElementById("title");
+      titleEl.className = "loud";
+      console.log(titleEl);
+
+      // className is overwritten when you use it more than once
+      const contentEl = document.getElementById("many-words");
+      contentEl.className = "loud";
+      contentEl.className = "soft";
+      console.log(contentEl);
+    </script>
+  </body>
+</html>

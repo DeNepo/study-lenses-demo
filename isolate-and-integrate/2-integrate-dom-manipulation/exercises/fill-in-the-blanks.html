@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>exercise: blanks</title>
+    <style>
+      .loud {
+        color: red;
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root">
+      <h1 id="title" class="loud">big words</h1>
+      <p id="many-words">many smaller words</p>
+    </div>
+
+    <script>
+      "use strict";
+
+      /* Scavenger Hunt!
+
+        practice reading through all the element properties in the DOM
+        many of the answers are there if you look in the right place ;)
+
+      */
+
+      // ----- DOM manipulation script -----
+
+      const headerEl = document.getElementById("__");
+      headerEl.className = "";
+
+      const __ = document.getElementById("many-words");
+      __.__ = "such pretty words";
+
+      const referenceEl = document.createElement("a");
+      referenceEl.innerText = "learn more things";
+      referenceEl.href = "https://duckduckgo.com";
+      referenceEl.target = "_blank";
+      document.getElementById("root").appendChild(referenceEl);
+
+      // ----- assertions -----
+
+      const headerIsLoud = headerEl.className === "loud";
+      console.assert(headerIsLoud === __, "is the header loud?");
+
+      console.assert(
+        contentEl.innerText === "such pretty words",
+        "is the paragraph pretty?"
+      );
+
+      console.assert(
+        referenceEl.nodeName === __,
+        "what is the link's node name?"
+      );
+    </script>
+  </body>
+</html>

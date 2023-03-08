@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf8" />
+
+    <title>simple DOM UI</title>
+  </head>
+
+  <body>
+    <div id="root">
+      <form id="input">
+        <label>type something: <input id="user-string" type="text" /> </label>
+        <br />
+        <label
+          >choose a number: <input id="user-number" type="number" value="0" />
+        </label>
+        <br />
+        <label
+          >accept or not: <input id="user-boolean" type="checkbox" />
+        </label>
+      </form>
+
+      <hr />
+
+      <pre id="output"></pre>
+    </div>
+
+    <script type="module">
+      // --- this dependency is used in /spiral-curriculum ---
+
+      import {
+        // docs are in /lib/dom-ui
+        whenFormDataChanges,
+        readString,
+        readNumber,
+        readBoolean,
+        displayString,
+      } from "../../../../../lib/dom-io/index.js";
+
+      whenFormDataChanges("input", () => {
+        // --- read the user's input ---
+        const stringInput = readString("user-string");
+        const numberInput = readNumber("user-number");
+        const booleanInput = readBoolean("user-boolean");
+        console.log(stringInput, numberInput, booleanInput);
+
+        // --- display the input ---
+        const allTogether = `string: ${stringInput}\nnumber: ${numberInput}\nboolean: ${booleanInput}`;
+        displayString("output", allTogether);
+      });
+    </script>
+  </body>
+</html>

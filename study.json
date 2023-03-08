@@ -1,0 +1,29 @@
+{
+  "--port": 8080,
+  "study": {
+    "save": true,
+    "eval": true,
+    "tests": [".test.js", ".spec.js"],
+    "flowchart": true,
+    "trace": true,
+    "variables": true,
+    "ask": {
+      "functions": false
+    },
+    "pseudo": true,
+
+    "table": true,
+    "blanks": true
+  },
+
+  "highlight": {
+    "--use": "study",
+    "random": true
+  },
+  "variables": {
+    "--use": "study"
+  },
+  "parsons": {
+    "--use": "study"
+  }
+}

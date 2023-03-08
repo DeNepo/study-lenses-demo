@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>example: node name</title>
+    <style></style>
+  </head>
+
+  <body>
+    <div id="root">
+      <button id="html-button"></button>
+      <section id="html-section"></section>
+      <input id="html-input" />
+    </div>
+
+    <script>
+      "use strict";
+
+      /* element.nodeName
+
+        .nodeName will tell you what kind of element something is
+        it's kind of like typeof for DOM elements
+
+      */
+
+      const root = document.getElementById("root");
+
+      // you can create an element with lower or upper case letters
+      const divEl = document.createElement("Div");
+      // but the .nodeName will be in all capitals
+      console.log(divEl.nodeName, divEl);
+
+      // you can't modify the .nodeName property of an element
+      try {
+        divEl.nodeName = "!potato!";
+      } catch (err) {
+        console.log(err);
+      }
+
+      // .nodeName works the same for elements created with HTML or JS
+
+      const dynamicButton = document.createElement("bUTTOn");
+      const staticButton = document.getElementById("html-button");
+      console.log(dynamicButton.nodeName, staticButton.nodeName); // BUTTON, BUTTON
+
+      const dynamicSection = document.createElement("SeCtIoN");
+      const staticSection = document.getElementById("html-button");
+      console.log(dynamicSection.nodeName, staticSection.nodeName); // SECTION, SECTION
+
+      const dynamicInput = document.createElement("InpuT");
+      const staticInput = document.getElementById("html-input");
+      console.log(dynamicInput.nodeName, staticInput.nodeName); // INPUT, INPUT
+    </script>
+  </body>
+</html>

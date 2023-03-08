@@ -1,0 +1,22 @@
+{
+  "--defaults": {
+    "directory": "fuzz"
+  },
+  "fuzz": {
+    "save": true,
+    "ask": false,
+    "variables": false,
+    "flowchart": false,
+    "blanks": false,
+    "openIn": false,
+    "table": "values",
+    "run": {
+      "type": "module",
+      "text": "fuzz"
+    }
+  },
+  "study": {
+    "environment": true,
+    "type": "module"
+  }
+}

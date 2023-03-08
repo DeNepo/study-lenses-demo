@@ -1,0 +1,16 @@
+{
+  "--defaults": {
+    ".html": "study"
+  },
+  "study": {
+    "environment": true,
+    "type": "module",
+    "flowchart": false,
+    "trace": false,
+    "variables": false,
+    "ask": false,
+    "pseudo": false,
+    "table": false,
+    "blanks": false
+  }
+}
