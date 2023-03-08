@@ -17,3 +17,7 @@ Or explore the demo online, you just won't be able to save your changes for more
 
 - explore the demo directly: https://study-lenses-demo.onrender.com/?--defaults
 - read the guide first: https://study-lenses-demo.onrender.com/?--help
+
+---
+
+[fork it](https://github.com/colevandersWands/study-lenses-demo)!
