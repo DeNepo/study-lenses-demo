@@ -1,16 +1,16 @@
 {
-  "name": "study-lenses-demo",
-  "version": "1.0.0",
-  "description": "",
-  "scripts": {
-    "study": "study",
-    "demo:local": "study --demo-reset=300000 --reset-ignore=node_modules",
-    "demo:deployed": "study --demo-reset=300000 --reset-ignore=node_modules --no-open",
-    "demo:dev": "study --demo-reset=10000 --reset-ignore=node_modules, --no-open"
-  },
-  "author": "colevandersWands",
-  "license": "MIT",
-  "dependencies": {
-    "study-lenses": "^0.0.169"
-  }
+	"name": "study-lenses-demo",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"study": "study",
+		"demo:local": "study --demo-reset=300000 --reset-ignore=node_modules",
+		"demo:deployed": "study --demo-reset=300000 --reset-ignore=node_modules --no-open",
+		"demo:dev": "study --demo-reset=10000 --reset-ignore=node_modules, --no-open"
+	},
+	"author": "colevandersWands",
+	"license": "MIT",
+	"dependencies": {
+		"study-lenses": "^0.0.170"
+	}
 }
