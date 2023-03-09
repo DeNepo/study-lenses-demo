@@ -1,6 +1,10 @@
 # Study Lenses Demo
 
-A repository of demo content for the [Study Lenses](https://github.com/colevandersWands/study-lenses) learning environment, it shows both what Study lenses can do and different ways of organizing content. Learn more about the ideas behind Study Lenses [right here](https://evancole.be/#/page/Study%20lenses).
+A repository of demo content for the
+[Study Lenses](https://github.com/colevandersWands/study-lenses) offline-first
+learning environment, it shows both what Study lenses can do and different ways
+of organizing content. Learn more about the ideas behind Study Lenses
+[right here](https://evancole.be/#/page/Study%20lenses).
 
 Explore the content locally:
 
@@ -13,7 +17,9 @@ Explore the content locally:
    - explore the content directly
    - check out the guide by replacing `?--defaults` in your URL `?--help`
 
-Or explore the demo online, you just won't be able to save your changes for more than 5 minutes. It also may be slow to start up or load. And if you see `Cannot GET`, try waiting a few seconds and refreshing.
+Or explore the demo online, you just won't be able to save your changes for more
+than 5 minutes. It also may be slow to start up or load. And if you see
+`Cannot GET`, try waiting a few seconds and refreshing.
 
 - explore the demo directly: https://study-lenses-demo.onrender.com/?--defaults
 - read the guide first: https://study-lenses-demo.onrender.com/?--help
