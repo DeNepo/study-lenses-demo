@@ -4,7 +4,7 @@ A repository of demo content for the
 [Study Lenses](https://github.com/colevandersWands/study-lenses) offline-first
 learning environment, it shows both what Study lenses can do and different ways
 of organizing content. Learn more about the ideas behind Study Lenses
-[right here](https://evancole.be/#/page/Study%20lenses).
+[right here](https://denepo.js.org).
 
 Explore the content locally:
 
