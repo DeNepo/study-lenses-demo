@@ -2,7 +2,7 @@
 
 # Adjust NODE_VERSION as desired
 ARG NODE_VERSION=20.11.0
-FROM node:${NODE_VERSION}-slim AS base
+FROM node:16-slim AS base
 
 LABEL fly_launch_runtime="Node.js"
 
@@ -17,10 +17,10 @@ ENV NODE_ENV="production"
 FROM base AS build
 
 # Install packages needed to build node modules
-RUN apt-get update -qq && \
+RUN apt-get update -qq && apt-get install python-is-python3 &&\
     apt-get install --no-install-recommends -y build-essential node-gyp pkg-config python-is-python3
 
-
+    
 # Install node modules
 COPY package-lock.json package.json ./
 RUN npm ci
